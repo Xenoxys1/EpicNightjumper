@@ -1,0 +1,145 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin: 10px auto;
+    background-color: red;
+    border: solid darkred 5px;
+    border-radius: 5pc;
+    width: 200px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#points {
+    display: flex;
+    align-items: center;
+}
+
+#score {
+    background-color: orange;
+    border: solid orangered 5px;
+    border-radius: 5pc;
+    width: 300px;
+    text-align: center;
+}
+
+#highScore {
+    background-color: blue;
+    border: solid darkblue 5px;
+    border-radius: 5pc;
+    width: 300px;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    font-family: cursive;
+    color: white;
+}
+
+.game {
+    width: 700px;
+    height: 150px;
+    margin: 0px auto;
+    border: solid black 1px;
+    background-image: url(/img/back.jpg);
+    border: rgb(5, 0, 95) solid 10px;
+}
+
+#cat {
+    width: 40px;
+    height: 40px;
+    background-image: url(/img/catndog/png/cat/Idle.png);
+    background-size: cover;
+    position: relative;
+    top: 110px;
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 110px;
+        background-image: url(/img/catndog/png/cat/Jump\ \(1\).png);
+        background-size: cover;
+    }
+
+    12.5% {
+        top: 90px;
+        background-image: url(/img/catndog/png/cat/Jump\ \(2\).png);
+        background-size: cover;
+    }
+
+    25% {
+        top: 70px;
+        background-image: url(/img/catndog/png/cat/Jump\ \(3\).png);
+        background-size: cover;
+    }
+
+    37.5% {
+        top: 50px;
+        background-image: url(/img/catndog/png/cat/Jump\ \(4\).png);
+        background-size: cover;
+    }
+
+    50% {
+        top: 30px;
+        background-image: url(/img/catndog/png/cat/Jump\ \(5\).png);
+        background-size: cover;
+    }
+
+    62.5% {
+        top: 50px;
+        background-image: url(/img/catndog/png/cat/Fall\ \(1\).png);
+        background-size: cover;
+    }
+
+    75% {
+        top: 70px;
+        background-image: url(/img/catndog/png/cat/Fall\ \(2\).png);
+        background-size: cover;
+    }
+
+    87.5% {
+        top: 90px;
+        background-image: url(/img/catndog/png/cat/Fall\ \(3\).png);
+        background-size: cover;
+    }
+
+    100% {
+        top: 110px;
+        background-image: url(/img/catndog/png/cat/Fall\ \(4\).png);
+        background-size: cover;
+    }
+}
+
+#bullet {
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/enemy.png);
+    background-size: cover;
+    position: relative;
+    top: 80px;
+    left: 580px;
+    animation: block 1.5s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 680px;
+    }
+
+    100% {
+
+        left: -20px;
+    }
+}
